@@ -98,23 +98,28 @@ function makeCounter() {
 
 function counterFactory(value) {
   // Code here.
-  function inc() {
+  var num = value
 
+  function inc() {
+    num += 1
+    return num
   }
   function dec() {
-    
+    num -= 1
+    return num
   }
 
   return {
+  inc, dec
 
   };
 }
 
 counter = counterFactory(10);
-// counter.inc() // 11
-// counter.inc() // 12
-// counter.inc() // 13
-// counter.dec() // 12
+counter.inc() // 11
+counter.inc() // 12
+counter.inc() // 13
+counter.dec() // 12
 
 
 
