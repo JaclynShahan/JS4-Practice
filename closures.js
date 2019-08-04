@@ -54,14 +54,9 @@ function callFriend(name) {
 */
 
 //Code Here
-function callJake(name) {
-  var name = 'Jake'
-   function dial(number) {
-     var number = '435-555-9248'
-    return 'Calling' + name + ' at ' + number
-  }
-  return dial;
-}
+var callJake = callFriend('Jake')
+callJake('435-555-9248')
+
 
 
 ////////// PROBLEM 3 //////////
@@ -72,8 +67,13 @@ function callJake(name) {
 
 //Code Here
 function makeCounter() {
-
-}
+  var increment = 0  
+    function inc() {
+  increment += 1 
+  return increment
+    }
+    return inc
+  }
 
 
 //Uncomment this once you make your function
