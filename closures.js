@@ -136,8 +136,8 @@ function motivation( firstname, lastname ) {
 
   // code message function here.
   function message() {
-    let response = welcomeText + ' ' + firstname + ' ' + lastname + '.'
-    return response
+     let response = welcomeText + ' ' + firstname + ' ' + lastname + '.'
+ return response
    
   }
 
@@ -171,8 +171,10 @@ var module = (function() {
   // outside our lexical scope
   return {
     // Code here.
+    publicMethod: () => privateMethod()
   };
 })();
+module.publicMethod();
 
 
 
