@@ -135,9 +135,14 @@ function motivation( firstname, lastname ) {
   var welcomeText = "You're doing awesome, keep it up";
 
   // code message function here.
+  function message() {
+    let response = welcomeText + ' ' + firstname + ' ' + lastname + '.'
+    return response
+   
+  }
 
   //Uncommment this to return the value of your message function
-  //return message;
+  return message;
 }
 
 var greeting = motivation('Billy', 'Bob'); // 'You're doing awesome keep it up Billy Bob.
